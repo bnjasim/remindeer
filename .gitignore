@@ -1,0 +1,61 @@
+# Built application files
+*.apk
+*.apks
+*.aab
+*.jar
+
+# Compiled JNI libraries
+*.so
+
+# Android Studio configuration files
+*.iml
+*.iws
+*.ipr
+
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Caches and generated files
+.idea/
+.gradle/
+build/
+captures/
+local.properties
+navigation/navArgsSafeArgs*.xml
+navigation/navArgs-include-*.xml
+composableAnalysis/
+
+# Gradle wrapper
+gradle/wrapper/gradle-wrapper.jar
+gradle/wrapper/gradle-wrapper.properties
+
+# Local configuration file (sdk path, etc.)
+local.properties
+
+# Thumbnails created by macOS
+.DS_Store
+
+# Thumbnails created by Windows
+Thumbs.db
+
+# Crashlytics generated file
+crashlytics.properties
+
+# ProGuard files
+proguard-*.txt
+Feel free to adjust the contents of this file based on your specific project's requirements and additional files or directories you may want to exclude from version control.
+
+
+

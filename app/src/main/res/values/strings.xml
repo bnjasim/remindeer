@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Remindeer</string>
+    <string name="title_activity_create_reminder_screen">CreateReminderScreen</string>
+</resources>
