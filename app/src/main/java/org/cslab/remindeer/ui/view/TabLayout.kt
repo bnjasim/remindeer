@@ -24,6 +24,8 @@ fun TabLayout(viewModel: MainViewModel) {
                             0 -> Icon(imageVector = Icons.Default.Notifications, contentDescription = null)
                             1 -> Icon(imageVector = Icons.Default.Add, contentDescription = null)
                             2 -> Icon(imageVector = Icons.Default.Edit, contentDescription = null)
+                            3 -> Icon(imageVector = Icons.Default.Menu, contentDescription = null)
+                            4 -> Icon(imageVector = Icons.Default.Favorite, contentDescription = null)
                         }
                     }
                 )
@@ -34,6 +36,8 @@ fun TabLayout(viewModel: MainViewModel) {
             0 -> NotificationScreen(viewModel = viewModel)
             1 -> HomeScreen(viewModel = viewModel)
             2 -> UpcomingScreen(viewModel = viewModel)
+            3 -> NoteScreen(viewModel = viewModel)
+            4 -> QuoteScreen(viewModel = viewModel)
         }
     }
 }

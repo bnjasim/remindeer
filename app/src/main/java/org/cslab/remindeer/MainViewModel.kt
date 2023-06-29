@@ -10,7 +10,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
 
     private val _tabIndex: MutableLiveData<Int> = MutableLiveData(1)
     val tabIndex: LiveData<Int> = _tabIndex
-    val tabs = listOf("Alerts", "Home", "Upcoming")
+    val tabs = listOf("Alerts", "New", "Upcoming", "Notes", "Quotes")
 
     var isSwipeToTheLeft: Boolean = false
     private val draggableState = DraggableState { delta ->
@@ -22,8 +22,8 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
 
     fun updateTabIndexBasedOnSwipe() {
         _tabIndex.value = when (isSwipeToTheLeft) {
-            true -> Math.floorMod(_tabIndex.value!!.plus(1), tabs.size)
-            false -> Math.floorMod(_tabIndex.value!!.minus(1), tabs.size)
+            true -> Math.floorMod(_tabIndex.value!!.minus(1), tabs.size)
+            false -> Math.floorMod(_tabIndex.value!!.plus(1), tabs.size)
         }
     }
 
